@@ -8,15 +8,9 @@ Mốc gần nhất sau ngày 5/11/2026 là **Tết Đinh Mùi**, Mùng 1 vào **
 
 Mở `index.html` trực tiếp trong trình duyệt.
 
-Hoặc chạy một máy chủ tĩnh trong thư mục project:
+Hoặc vào đường link: https://anpham-sudo.github.io/DEM-NGUOC-TET-AM-LICH/DemNguocTET/
 
-```powershell
-python -m http.server 8765
-```
 
-Rồi mở [http://127.0.0.1:8765](http://127.0.0.1:8765).
-
-Nút **Sao chép** dùng Clipboard API. Trình duyệt chỉ cho phép chép khi trang được mở qua `http://` hoặc `https://`, không phải `file://`.
 
 ## Cấu trúc
 
