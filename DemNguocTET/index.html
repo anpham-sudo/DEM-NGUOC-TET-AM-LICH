@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đếm ngược Tết Âm lịch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="backdrop" aria-hidden="true">
+      <span class="lantern lantern-left"></span>
+      <span class="lantern lantern-right"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+    </div>
+
+    <main class="card">
+      <p class="eyebrow">Xuân đang gõ cửa</p>
+      <h1>Đếm ngược đến Tết</h1>
+      <p class="festival" id="festival-name">Tết Âm lịch</p>
+      <p class="solar" id="solar-date"></p>
+
+      <section class="countdown" aria-live="polite" aria-label="Thời gian còn lại đến Tết">
+        <article class="unit">
+          <span class="value" id="days">00</span>
+          <span class="label">Ngày</span>
+        </article>
+        <article class="unit">
+          <span class="value" id="hours">00</span>
+          <span class="label">Giờ</span>
+        </article>
+        <article class="unit">
+          <span class="value" id="minutes">00</span>
+          <span class="label">Phút</span>
+        </article>
+        <article class="unit">
+          <span class="value" id="seconds">00</span>
+          <span class="label">Giây</span>
+        </article>
+      </section>
+
+      <p class="message" id="message">Đang tính thời gian đến giao thừa…</p>
+      <p class="wish" id="wish" hidden></p>
+
+      <div class="actions">
+        <button type="button" class="btn" id="wish-btn">Lời chúc</button>
+        <button type="button" class="btn btn-line" id="copy-btn">Sao chép</button>
+        <button type="button" class="btn btn-line" id="petal-btn" aria-pressed="true">Hoa rơi</button>
+      </div>
+
+      <p class="note">Mốc giao thừa: 00:00 giờ Việt Nam (UTC+7)</p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
